@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,113 +6,135 @@
     text-decoration: none;
     font-family: "Rubik", sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-:root{
+
+:root {
     --webkit-text: #A3AED0;
-   --text-color:#2B3674 ;
-   --text-size:34px;
-   --main-size:14px;
-   --fv3:300;
-   --fv4:400;
-   --fv5:500;
-   --fv6:600;
-   --fv7:700;
-   --fvb:bold;
-   --size-24:24px;
-   --oq:#F4F7FE;
-   --bac:#FFFFFF;
-}
-.main{
-   display: flex;
-   
+    --text-color: #2B3674;
+    --text-size: 34px;
+    --main-size: 14px;
+    --fv3: 300;
+    --fv4: 400;
+    --fv5: 500;
+    --fv6: 600;
+    --fv7: 700;
+    --fvb: bold;
+    --size-24: 24px;
+    --oq: #F4F7FE;
+    --bac: #FFFFFF;
 }
 
-.Sidebar{
-width: 20%;
-max-width: 20%;
+.main {
+    display: flex;
+
 }
-.list{
+
+.Sidebar {
+    width: 20%;
+    max-width: 20%;
+    height: 740px;
+}
+
+.list {
     display: flex;
     align-items: center;
     gap: 5px;
     margin: 15px;
-    border: 1px solid red ;
+    border: 1px solid red;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
     max-width: 100%;
 }
-.sidebar_img{
+
+.sidebar_img {
     margin: 54px 90px 0px;
 
 }
-.lists{
+
+.lists {
     margin: 100px 30px;
 }
-.list_item{
+
+.list_item {
     margin-top: 3px;
     font-size: 18px;
     color: var(--webkit-text);
     font-weight: 500;
 }
-.list:hover{
+
+.list:hover {
     box-shadow: 10px 10px 20px var(--webkit-text);
     color: black;
-    transition:1s;
+    transition: 1s;
 }
-.navbar{
+
+.navbar {
     width: 100%;
-background-color:#f4f6fe;
-padding: 40px 0px;
+    background-color: #f4f6fe;
+    padding: 40px 0px;
+    overflow-y: scroll;
+    s
+    height: 740px;
+
 }
-.container{
+
+.container {
     width: 98%;
     max-width: 95%;
     margin: 0 auto;
 }
-.nav_lists{
+
+.nav_lists {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav_list_input{
-   
+
+.nav_list_input {
+
     border-radius: 30px;
-   background-color: #fff;
+    background-color: #fff;
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 12px 12px;
-    box-shadow: 10px 10px 20px var(--webkit-text) ;
+    box-shadow: 10px 10px 20px var(--webkit-text);
 }
-.navInput{
+
+.navInput {
     height: 40px;
     border-radius: 49px;
     background-color: var(--oq);
     color: #8F9BBA;
     text-align: center;
-    border:none;
+    border: none;
 }
-.nav_title{
+
+.nav_title {
     color: var(--text-color);
-     font-size: var(--text-size);
-     font-weight: var(--fv5);
-    
+    font-size: var(--text-size);
+    font-weight: var(--fv5);
+
 }
-.nav_text{
+
+.nav_text {
     font-size: var(--main-size);
     color: var(--webkit-text);
     margin-right: 120px;
-    
+
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     margin: 50px 0px;
 }
-.col-2{
+
+.col-2 {
     display: flex;
     max-width: 100%;
     align-items: center;
@@ -121,218 +143,141 @@ padding: 40px 0px;
     border-radius: 20px;
     background-color: var(--bac);
     box-sizing: border-box;
-    border:  none;
-    box-shadow:5px 10px 15px black;
+    border: none;
+    box-shadow: 5px 10px 15px black;
     filter: brightness(1.2) saturate(1.5);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 5px 10px 15px black;
 }
 
-.col-2_title{
-font-size: var(--size-24);
-font-weight: var(--fv6);
-color: var(--text-color);
+.col-2_title {
+    font-size: var(--size-24);
+    font-weight: var(--fv6);
+    color: var(--text-color);
 }
-.burger-menu i {
-    
-   font-size: 25px;
-    color: #333;
-    }
-    
-    /* Sidebar ochilganda ko'rsatiladi */
-    .Sidebar.open {
-    transform: translateX(0);
-    }
-    .burger-menu{
-        display: none;
-    }
-    .modal_btn{
-     
-      background: none;
-        color: rgb(13, 12, 12);
-        padding: 14px 20px;
-        display: flex;
-        justify-content:start ;
-        display: none;
-        border: none;
-        cursor: pointer;
-        
-        opacity: 0.9;
-      }
-      
-     
-      
-      /* Float cancel and delete buttons and add an equal width */
-      .cancelbtn, .deletebtn {
-        float: left;
-        width: 50%;
-      }
-      
-      /* Add a color to the cancel button */
-      .cancelbtn {
-        background-color: #ccc;
-        color: black;
-      }
-      
-      /* Add a color to the delete button */
-      .deletebtn {
-        background-color: #f44336;
-      }
-      
-      /* Add padding and center-align text to the container */
-      .container {
-        padding: 16px;
-        text-align: center;
-      }
-      
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-         /* Full width */
- /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: #474e5d;
-        padding-top: 50px;
-      }
-      
-      /* Modal Content/Box */
-      .modal-content {
-        background-color: #fefefe;
-        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-      }
-      
-      /* Style the horizontal ruler */
-      hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-      }
-       
-      /* The Modal Close Button (x) */
-      .close {
-        position: absolute;
-        right: 35px;
-        top: 15px;
-        font-size: 40px;
-        font-weight: bold;
-        color: #f1f1f1;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: #f44336;
-        cursor: pointer;
-      }
-      
-      /* Clear floats */
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
 
-      
-      /* Change styles for cancel button and delete button on extra small screens */
-      @media screen and (max-width: 420px) {
-        .cancelbtn, .deletebtn {
-           width:300px;
-        }
-        .modal_btn{
-            display: flex;
-            justify-content: flex-end;
-        }
-        #sidebar{
-            display: none;
-        }
-        .nav_lists{
-            display: block;
-            max-width: 100%;
-        }
-        .row{
-            display: block;
-            
-        }
-        .nav_lists{
-        display: flex;
-        justify-content: center;
-        }
-        .col-2{
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            display: flex;
-    padding-left:50px;
-    width: 100%;
-        }
-        .nav_list_input{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin:20px 0px;
-        }
-        .navInput{
-        width: 100%;
-        }
-      }
-      @media screen and (max-width: 600px){
-        #sidebar{
-            display: none;
-        }
-        .modal_btn{
-            display: flex;
-        }
-        .nav_list_input{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin:20px 0px;
-        
-        }
-        .navInput{
-            width: 100%;}
-        .row{
-            display: flex;
-            flex-wrap: wrap; 
-        }
-        .col-2{
-            margin-bottom: 30px;
-            box-sizing: border-box;
-max-width: 100%;
-            
-        }
-        .nav_lists{
-            display: block;
-            flex-wrap: wrap;
-        }
-      }
-      @media screen and (min-width: 620px) and (max-width: 1200px) {
-        #sidebar{
-            display: none;
-        }
-        .navbar{
-            width: 100%;
-        }
-        .modal_btn{
-            display: block;
-            color: rgb(123, 123, 234);
-        }
-        .row{
-            display: grid;
-            grid-template-columns: auto auto auto;
-            row-gap: 15px;
-        }
-      }
-.diagram{
+.burger-menu i {
+
+    font-size: 25px;
+    color: #333;
+}
+
+/* Sidebar ochilganda ko'rsatiladi */
+.Sidebar.open {
+    transform: translateX(0);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.modal_btn {
+
+    background: none;
+    color: rgb(13, 12, 12);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: start;
+    display: none;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0.9;
+}
+
+
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn,
+.deletebtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+    background-color: #ccc;
+    color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+    background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+
+    position: fixed;
+    z-index: 1;
+    
+    left: 0;
+    top: 0;
+    
+
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+
+
+.diagram {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 0px;
 
 }
-.canvas{
+
+.canvas {
     border: 0.5px solid red;
     width: 48%;
     max-width: 48%;
@@ -345,10 +290,122 @@ max-width: 100%;
     align-items: center;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 5px 10px 15px black;
 }
-     #chart4, #chart5{
-max-width: 100%;
-     } 
-  
+@media screen and (max-width: 420px) {
 
-    
+    .cancelbtn,
+    .deletebtn {
+        width: 300px;
+    }
 
+    .modal_btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .nav_lists {
+        display: block;
+        max-width: 100%;
+    }
+
+    .row {
+        display: block;
+
+    }
+
+    .nav_lists {
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-2 {
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        display: flex;
+        padding-left: 50px;
+        width: 100%;
+    }
+
+    .nav_list_input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .navInput {
+        width: 100%;
+    }
+    .diagram{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+    .canvas{
+        margin-bottom: 30px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sidebar {
+        display: none;
+    }
+
+    .modal_btn {
+        display: flex;
+    }
+
+    .nav_list_input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0px;
+
+    }
+
+    .navInput {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-2 {
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        max-width: 100%;
+
+    }
+
+    .nav_lists {
+        display: block;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1200px) {
+    #sidebar {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .modal_btn {
+        display: block;
+        color: rgb(123, 123, 234);
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 15px;
+    }
+}
