@@ -38,10 +38,13 @@ let back=[
 ]
 let UlElement= document.querySelector(".row")
 const navbar = document.getElementById('navbar')
+navbar.style.display="none";
 const market = document.getElementById('market')
+market.style.display="none"
 const menuList = [navbar, market]
 function menuClick(index) {
    menuList.forEach((el, ind) => {
+    
    if(index === ind) el.style.display='block';
    else el.style.display='none';
    })
