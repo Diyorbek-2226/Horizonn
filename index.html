@@ -25,31 +25,31 @@
                 <img src="../images/Logo.svg" alt="">
             </div>
             <ul class="lists">
-                <li class="list">
+                <li class="list active" onclick="menuClick(0)">
                     <img src="../images/Icon.svg" alt="">
                     <h3 class="list_item">
                         Dashboard
                     </h3>
                 </li>
-                <li class="list">
+                <li class="list active" onclick="menuClick(1)">
                     <img src="../images/Icon1.svg" alt="">
                     <h3 class="list_item">
                         NFT Marketplace
                     </h3>
                 </li>
-                <li class="list">
+                <li class="list active" onclick="menuClick(2)">
                     <img src="../images/Icon2.svg" alt="">
                     <h3 class="list_item">
                         Tables
                     </h3>
                 </li>
-                <li class="list">
+                <li class="list active" onclick="menuClick(3)">
                     <img src="../images/Icon3.svg" alt="">
                     <h3 class="list_item">
                         Profile
                     </h3>
                 </li>
-                <li class="list">
+                <li class="list active" onclick="menuClick(4)">
 
                     <img src="../images/Icon4.svg" alt="">
                     <h3 class="list_item">
@@ -57,9 +57,10 @@
                     </h3>
                 </li>
             </ul>
+
         </Aside>
 
-        <nav  class="navbar">
+        <nav  class="navbar" id="navbar">
             <div class="container">
                 <button class="modal_btn" onclick="document.getElementById('id01').style.display='block'"> <i
                         class="fas fa-bars"></i></button>
@@ -141,6 +142,37 @@
 
             </div>
         </nav>
+        <header id="market">
+
+<div class="container-header">
+    <ul class="headers">
+        <li class="header1">
+            <p class="header_text">
+                Pages / NFT Marketplace
+            </p>
+            <h1 class="header_title">
+                NFT Marketplace
+            </h1>
+        </li>
+            <li class="nav_list_input">
+                <input class="navInput" placeholder="Search" type="text">
+                <img src="./images/ETH.svg" alt="">
+                <img src="../images/col1.svg" alt="">
+                <img src="../images/col2.svg" alt="">
+                <img src="../images/col3.svg" alt="">
+                <img src="../images/col4.svg" alt="">
+            </li>
+    </ul>
+    <div class="header_title">
+<div class="header_left">
+    <img src="./images/border.svg" alt="">
+</div>
+<div class="header-right">
+
+</div>
+    </div>
+</div>
+        </header>
     </main>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

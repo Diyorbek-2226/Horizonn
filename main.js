@@ -37,12 +37,23 @@ let back=[
 }
 ]
 let UlElement= document.querySelector(".row")
-back.map((item)=>{
+const navbar = document.getElementById('navbar')
+const market = document.getElementById('market')
+const menuList = [navbar, market]
+function menuClick(index) {
+   menuList.forEach((el, ind) => {
+   if(index === ind) el.style.display='block';
+   else el.style.display='none';
+   })
+    
+}
+back.map((item ,id)=>{
     let liElement=document.createElement("li");
     let images=document.createElement("img");
     images.src=item.imgUrl
     let small=document.createElement("small");
     small.textContent=item.smal
+    small.key=id
     let h1Element=document.createElement("h1");
     h1Element.textContent=item.price;
     let span=document.createElement("span");
