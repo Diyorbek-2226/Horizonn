@@ -44,7 +44,7 @@ market.style.display="none"
 const menuList = [navbar, market]
 function menuClick(index) {
    menuList.forEach((el, ind) => {
-    
+    el.style.display="none"
    if(index === ind) el.style.display='block';
    else el.style.display='none';
    })
