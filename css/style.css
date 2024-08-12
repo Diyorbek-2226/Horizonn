@@ -268,8 +268,10 @@ hr {
     clear: both;
     display: table;
 }
-
-
+#navbar{display: none;}
+#market{
+    display: none;
+}
 /* Change styles for cancel button and delete button on extra small screens */
 
 
