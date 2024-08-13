@@ -34,7 +34,7 @@ let back=[
     smal:"Total Projects",
     price:"2935",
     imgUrl:"../images/lib6.svg"
-}
+},
 ]
 let UlElement= document.querySelector(".row")
 const navbar = document.getElementById('navbar')
@@ -67,16 +67,12 @@ back.map((item ,id)=>{
     liElement.className='col-2';
     h1Element.className="col-2_title"
 })
-// Get the modal
 var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
-// Define the data and options for each chart
 const chartConfigs = [
     {
         type: 'bar',
@@ -115,7 +111,7 @@ const chartConfigs = [
         options: { responsive: true }
     },
     {
-        type: 'doughnut',
+        type: 'html',
         data: {
             labels: ['Red', 'Blue', 'Yellow'],
             datasets: [{
@@ -144,14 +140,12 @@ const chartConfigs = [
             labels: ['Red', 'Green', 'Yellow', 'Grey', 'Blue'],
             datasets: [{
                 data: [11, 16, 7, 3, 14],
-                backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB']
+                backgroundColor: ['#FF6385', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB']
             }]
         },
         options: { responsive: true }
     }
 ];
-
-// Initialize the charts
 chartConfigs.forEach((config, index) => {
     const ctx = document.getElementById(`chart${index + 1}`).getContext('2d');
     new Chart(ctx, {
